@@ -4,46 +4,120 @@
   padding: 2rem;
 }
 
+/* -----Header---- */
+
 .header {
   display: flex;
   justify-content: space-between;
   margin: 10px;
-  border: 1px black solid;
+  background: white;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
 .image {
   width: 100px;
 }
 
-.nva-item > ul {
+.login{
   display: flex;
-  list-style-type: none;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center; 
+ }
+ .login button{
+   background: white;
+   border-radius: 10px;
+   border-style: hidden;
+   text-decoration: none;
+   font-size: 16px;
+   box-shadow: rgba(5, 232, 20, 0.35) 0px 5px 15px;
+   height: 40px;
+   width: 100px; 
+ }
+
+ .nva-item {
+  /* margin-left:500px ; */
+  padding: 0;
+  list-style: none;
+  font-size: 19px;
 }
 
-.nva-item > ul>li {
-  padding: 10px;
+.nva-item ul {
+  text-align: center;
+  /* margin-top: 35px; */
+  display: flex;
+  justify-content: center;
+  list-style-type:none;
 }
 
-.card {
-  border: 1px black solid ;
-  display:inline-block;
-  margin: 10px;
-  padding: 10px;
-  width: 200px;
-  flex-wrap:wrap;
-  /* background-color: aliceblue; */
+.nva-item li {
+  margin: 0 10px;
 }
 
-.card > img {
-  width: 100%;
+.nva-item li a {
+  text-decoration: none;
+  color: #333; /* Link color */
+  font-weight: bold;
+  font-size: 27px;
 }
+
+.nva-item li a:hover {
+  color: #64da7b; /* Hover color */
+}
+
+ /* ----Search Buttom------ */
+
+ .search-btn{
+  background: white;
+  border-radius: 10px;
+  box-shadow: rgba(5, 232, 20, 0.35) 0px 5px 15px;
+  padding: 1rem;
+  border: none;
+  
+}
+
+.search-input{
+ background: white;
+ border-radius: 10px;
+ box-shadow: rgba(29, 219, 70, 0.35) 0px 5px 15px;
+ padding: 1rem;
+ margin: 22px;
+ border: none;
+}
+
+/* ------Cart------ */
 
 .restaurant-list{
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap
 }
 
-.heading {
- padding: 10px;
- font-size: 1rem;
+.restaurant-list-card {
+  display: inline-block;
+  justify-content: center;
+  width: 200px;
+  height: 550px;
+  margin: 1rem;
+  flex: 0.5;
+  flex-wrap: wrap;
+  text-align: center;
+  background: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 1rem;
 }
+
+.imgCard {
+  border-radius: 100%;
+  border: 1px solid black;
+  height: 200px;
+  width: 200px;
+}
+
+/* h1 {
+  margin: 1rem 0;
+}
+
+h2 {
+  margin: 1rem 0;
+} */

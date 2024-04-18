@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
+import {Link } from "react-router-dom";
 
 const Header = () => {
+const [isLoggedIn,setIsLoggedIn]=useState(true)
+
+
   return (
     <div className="header">
     <div>
@@ -14,11 +18,17 @@ const Header = () => {
     </div>
     <div className="nva-item">
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-        <li>Cart</li>
+        <li> <Link to="/">Home</Link></li>
+        <li> <Link to="/About">About</Link></li>
+        <li> <Link to="/Contact">Contact</Link></li>
+        <li> <Link to="/Cart">Cart</Link></li>
       </ul>
+    </div>
+    <div className='login'>
+    {
+      (isLoggedIn)?( <button  onClick={()=>{setIsLoggedIn(false)}}>Login</button>):
+      (<button onClick={()=>{setIsLoggedIn(true)}}>Logout</button>)
+    }
     </div>
   </div>
   )
